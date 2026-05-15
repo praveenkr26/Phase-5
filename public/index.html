@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ask Gemini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div class="hero__badge">Phase 5 • Full Stack AI</div>
+        <h1>Ask Gemini</h1>
+        <p class="hero__subtitle">
+          Professional AI assistant powered by Node, Express, and Gemini.
+        </p>
+      </header>
+
+      <main class="card">
+        <form id="ask-form" class="form">
+          <label class="label" for="question">Your question</label>
+          <textarea
+            id="question"
+            name="question"
+            rows="4"
+            placeholder="Ask anything..."
+            required
+          ></textarea>
+          <div class="form__actions">
+            <button type="submit" class="btn btn--primary">Submit</button>
+            <button type="button" id="clear-btn" class="btn btn--ghost">Clear</button>
+          </div>
+        </form>
+
+        <section class="response">
+          <div class="response__header">
+            <h2>Answer</h2>
+            <span id="status" class="status">Waiting for a question</span>
+          </div>
+          <div id="answer" class="response__content">
+            Ask a question to see the response here.
+          </div>
+          <div class="response__actions">
+            <button type="button" id="speak-btn" class="btn btn--soft">Speak</button>
+            <button type="button" id="stop-btn" class="btn btn--soft">Stop</button>
+            <button type="button" id="copy-btn" class="btn btn--soft">Copy</button>
+            <button type="button" id="share-btn" class="btn btn--soft">Share</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Backend runs Gemini API securely on the server.</p>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
