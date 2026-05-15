@@ -8,9 +8,6 @@ https://phase-5-three-phi.vercel.app/
 
 ## Preview
 
-Add a screenshot to this repo (for example `public/preview.png`) and keep this image tag:
-
-![Ask Gemini Preview]
 <img width="666" height="497" alt="image" src="https://github.com/user-attachments/assets/aadd95fd-1062-4084-83a9-7ec60c8fc7d8" />
 
 
